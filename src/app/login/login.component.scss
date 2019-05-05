@@ -1,0 +1,68 @@
+
+.login-content{
+    display: flex;
+    justify-content: center;
+    padding-top: 2em;
+}
+.login-options{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+.logout-content{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    padding-top: 2em;
+}
+.logout-content > div{
+    display: flex;
+    justify-content: center;
+}
+.logout-identity{
+    font-family: sans-serif;
+    margin-bottom: 3em;
+}
+.login-form {
+    width: 480px;
+    mat-toolbar{
+        margin-bottom: 1em;
+    }
+    mat-card{
+        display: flex;
+        flex-direction: column;
+    }
+    mat-form-field{
+        margin-left: 1em;
+        margin-right: 1em;
+    }
+    mat-error{
+        font-size: 0.9em;
+        margin-left: 2em;
+        margin-bottom: 1.3em;
+    }
+    mat-spinner{
+       margin-left: 2em;
+    }
+}
+@media screen and (max-width: 480px){
+    .login-form {
+        width: 100%;
+        background-color:yellow;
+        mat-toolbar{
+            margin-bottom: 0.2em;
+        }
+        mat-card{
+            display: flex;
+            flex-direction: column;
+        }
+        mat-form-field{
+            margin-left: 0.2em;
+            margin-right: 0.2em;
+        }
+    }
+}
+
